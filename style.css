@@ -1,8 +1,18 @@
+ /* inter-700 - latin */
+ @font-face {
+     font-display: swap;
+     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 700;
+     src: url('resources/fonts/inter-v18-latin-700.woff2') format('woff2');
+ }
+
  #container {
      min-height: 90vh;
      max-width: 1600px;
      margin: 0 auto;
-     font-family: Arial, Helvetica, sans-serif;
+     font-family: Inter, Arial, Helvetica, sans-serif;
      font-size: 50px;
  }
 
@@ -37,8 +47,8 @@
  }
 
  header button#register:hover {
-     background-color: rgb(247, 131, 131);
-     color: white;
+     background-color: rgb(18, 131, 252);
+     color: rgb(0, 0, 0);
      border: 0;
  }
 
@@ -49,9 +59,7 @@
  }
 
  header button#login:hover {
-
-     color: rgb(247, 131, 131);
-     border: 0;
+     background-color:rgb(0, 74, 177);
  }
 
  #insta_logo {
@@ -61,7 +69,8 @@
 
  nav h2 {
      text-align: center;
-     font-size: 30px;
+     font-size: 35px;
+     font-weight: 800;
      margin-bottom: 50px;
  }
 
@@ -141,7 +150,6 @@
      left: 0;
      width: 250px;
      font-size: 20px;
-     font-weight: bold;
      background-color: rgba(0, 0, 0, 0.25);
      padding: 15px 25px;
      border-radius: 0 0 25px 25px;
